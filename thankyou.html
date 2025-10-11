@@ -54,7 +54,7 @@
       btn.disabled = true;
       status.textContent = 'Activating...';
       try {
-        const CLAIM_URL = 'https://YOUR_VERCEL_URL.vercel.app/api/claim';
+        const CLAIM_URL = 'https://ghostpass-git-main-conner-kolostians-projects.vercel.app/';
         const r = await fetch(`${CLAIM_URL}?session_id=${encodeURIComponent(session)}`);
         const j = await r.json();
         if (!r.ok || !j.token) throw new Error();
